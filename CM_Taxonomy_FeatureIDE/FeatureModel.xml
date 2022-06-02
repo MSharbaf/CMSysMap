@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendposition" value="1430,313"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="0"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="Conflict_Management_Technique">
+			<graphics key="position" value="714,19"/>
+			<graphics key="collapsed" value="false"/>
+			<or abstract="true" mandatory="true" name="Conflict_Specification">
+				<graphics key="position" value="327,99"/>
+				<graphics key="collapsed" value="false"/>
+				<feature name="Formalism">
+					<graphics key="position" value="285,190"/>
+				</feature>
+				<alt abstract="true" name="Pattern_based">
+					<graphics key="position" value="200,190"/>
+					<graphics key="collapsed" value="false"/>
+					<alt abstract="true" name="Conflict_Model">
+						<graphics key="position" value="145,265"/>
+						<graphics key="collapsed" value="false"/>
+						<feature name="Conflict_Profile">
+							<graphics key="position" value="214,365"/>
+						</feature>
+						<feature name="Conflict_Example">
+							<graphics key="position" value="118,365"/>
+						</feature>
+					</alt>
+					<feature name="Specification_Pattern">
+						<graphics key="position" value="233,265"/>
+					</feature>
+				</alt>
+				<feature name="Natural_Language">
+					<graphics key="position" value="348,190"/>
+				</feature>
+				<feature name="Implicit_Spec">
+					<graphics key="position" value="452,190"/>
+				</feature>
+			</or>
+			<or abstract="true" name="Conflict_Prevention">
+				<graphics key="position" value="538,158"/>
+				<graphics key="collapsed" value="false"/>
+				<or abstract="true" name="Operation_Ordering">
+					<graphics key="position" value="482,334"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Precedence_Relation">
+						<graphics key="position" value="468,428"/>
+					</feature>
+					<feature name="Heuristic_Search">
+						<graphics key="position" value="585,428"/>
+					</feature>
+				</or>
+				<feature name="Lock_based">
+					<graphics key="position" value="285,334"/>
+				</feature>
+				<or abstract="true" name="Conflict_free_Algorithm">
+					<graphics key="position" value="359,334"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Data_Replication">
+						<graphics key="position" value="258,428"/>
+					</feature>
+					<feature name="Merge_Construction">
+						<graphics key="position" value="354,428"/>
+					</feature>
+				</or>
+				<feature name="Sync_Modifications">
+					<graphics key="position" value="589,334"/>
+				</feature>
+				<feature name="Change_Awareness">
+					<graphics key="position" value="696,334"/>
+				</feature>
+			</or>
+			<or abstract="true" mandatory="true" name="Conflict_Detection">
+				<graphics key="position" value="836,158"/>
+				<graphics key="collapsed" value="false"/>
+				<or abstract="true" name="Constraint_Violation">
+					<graphics key="position" value="811,272"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Metamodel_Constraint">
+						<graphics key="position" value="665,458"/>
+					</feature>
+					<feature name="Model_Constraint">
+						<graphics key="position" value="784,458"/>
+					</feature>
+				</or>
+				<feature name="Pattern_Matching">
+					<graphics key="position" value="712,272"/>
+				</feature>
+				<alt abstract="true" name="Change_Overlapping">
+					<graphics key="position" value="919,272"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Contradicting_Changes">
+						<graphics key="position" value="999,458"/>
+					</feature>
+					<feature name="Equivalent_Changes">
+						<graphics key="position" value="887,458"/>
+					</feature>
+				</alt>
+				<feature name="Formal_Method">
+					<graphics key="position" value="1034,272"/>
+				</feature>
+			</or>
+			<and abstract="true" mandatory="true" name="Conflict_Resolution">
+				<graphics key="position" value="1099,155"/>
+				<graphics key="collapsed" value="false"/>
+				<alt abstract="true" mandatory="true" name="Resolution_Method">
+					<graphics key="position" value="1198,310"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Manual">
+						<graphics key="position" value="1226,428"/>
+					</feature>
+					<feature name="Semi_Auto">
+						<graphics key="position" value="1275,428"/>
+					</feature>
+					<feature name="Automatic">
+						<graphics key="position" value="1340,428"/>
+					</feature>
+				</alt>
+				<alt abstract="true" mandatory="true" name="Resolution_Time">
+					<graphics key="position" value="1099,310"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="On_the_fly">
+						<graphics key="position" value="1078,428"/>
+					</feature>
+					<feature name="Post_analysis">
+						<graphics key="position" value="1143,428"/>
+					</feature>
+				</alt>
+			</and>
+			<or abstract="true" name="Conflict_Awareness">
+				<graphics key="position" value="1297,97"/>
+				<graphics key="collapsed" value="false"/>
+				<or abstract="true" name="Notification">
+					<graphics key="position" value="1253,181"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Warning">
+						<graphics key="position" value="1247,267"/>
+					</feature>
+					<feature name="Prompt_Action">
+						<graphics key="position" value="1302,267"/>
+					</feature>
+				</or>
+				<feature name="Conflict_Highlighting">
+					<graphics key="position" value="1327,181"/>
+				</feature>
+				<or abstract="true" name="Conflict_Report">
+					<graphics key="position" value="1444,181"/>
+					<graphics key="collapsed" value="false"/>
+					<feature name="Textual_List">
+						<graphics key="position" value="1395,267"/>
+					</feature>
+					<feature name="Graphical_View">
+						<graphics key="position" value="1467,267"/>
+					</feature>
+				</or>
+			</or>
+		</and>
+	</struct>
+</featureModel>

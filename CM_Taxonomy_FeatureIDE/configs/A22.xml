@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="Conflict_Management_Technique"/>
+	<feature automatic="selected" name="Conflict_Specification"/>
+	<feature name="Formalism"/>
+	<feature automatic="selected" manual="selected" name="Pattern_based"/>
+	<feature automatic="selected" manual="selected" name="Conflict_Model"/>
+	<feature manual="selected" name="Conflict_Profile"/>
+	<feature automatic="unselected" name="Conflict_Example"/>
+	<feature automatic="unselected" name="Specification_Pattern"/>
+	<feature name="Natural_Language"/>
+	<feature name="Implicit_Spec"/>
+	<feature name="Conflict_Prevention"/>
+	<feature name="Operation_Ordering"/>
+	<feature name="Precedence_Relation"/>
+	<feature name="Heuristic_Search"/>
+	<feature name="Lock_based"/>
+	<feature name="Conflict_free_Algorithm"/>
+	<feature name="Data_Replication"/>
+	<feature name="Merge_Construction"/>
+	<feature name="Sync_Modifications"/>
+	<feature name="Change_Awareness"/>
+	<feature automatic="selected" name="Conflict_Detection"/>
+	<feature automatic="selected" manual="selected" name="Constraint_Violation"/>
+	<feature manual="selected" name="Metamodel_Constraint"/>
+	<feature manual="selected" name="Model_Constraint"/>
+	<feature name="Pattern_Matching"/>
+	<feature automatic="selected" manual="selected" name="Change_Overlapping"/>
+	<feature manual="selected" name="Contradicting_Changes"/>
+	<feature automatic="unselected" name="Equivalent_Changes"/>
+	<feature manual="selected" name="Formal_Method"/>
+	<feature automatic="selected" name="Conflict_Resolution"/>
+	<feature automatic="selected" name="Resolution_Method"/>
+	<feature automatic="unselected" name="Manual"/>
+	<feature manual="selected" name="Semi_Auto"/>
+	<feature automatic="unselected" name="Automatic"/>
+	<feature automatic="selected" name="Resolution_Time"/>
+	<feature automatic="unselected" name="On_the_fly"/>
+	<feature manual="selected" name="Post_analysis"/>
+	<feature automatic="selected" name="Conflict_Awareness"/>
+	<feature name="Notification"/>
+	<feature name="Warning"/>
+	<feature name="Prompt_Action"/>
+	<feature manual="selected" name="Conflict_Highlighting"/>
+	<feature automatic="selected" manual="selected" name="Conflict_Report"/>
+	<feature manual="selected" name="Textual_List"/>
+	<feature manual="selected" name="Graphical_View"/>
+</configuration>
